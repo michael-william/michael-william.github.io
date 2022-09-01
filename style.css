@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
   }
@@ -8,7 +9,7 @@ header {
 }
 
 html{
-    scroll-padding-top: 40rem;
+    scroll-padding-top: 4rem;
 }
 
 body {
@@ -124,14 +125,17 @@ p {
   #toggle:checked + .hamburger .top-bun {
     transform: rotate(-45deg);
     margin-top: 25px;
+    background-color: #6ecddd;
   }
   #toggle:checked + .hamburger .bottom-bun {
     opacity: 0;
     transform: rotate(45deg);
+    background-color: #6ecddd;
   }
   #toggle:checked + .hamburger .meat {
     transform: rotate(45deg);
     margin-top: -7px;
+    background-color: #6ecddd;
   }
   
   #toggle:checked + .hamburger + .nav {
@@ -188,6 +192,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    scroll-padding-top: 40rem;
 }
 
 .slider {
