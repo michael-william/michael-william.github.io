@@ -1,169 +1,210 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Wibaut Place</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<!-- Hero -->
-  <section class="et-hero-tabs" style="background:linear-gradient(0deg, rgba(87, 87, 87, 0.3), rgba(87, 87, 87, 0.3)),
-  url(/images/garden.jpg); 
-  background-size: cover;">
-    <h1 style="color:white;">Wibaut Place</h1>
-    <h3 style="color:white; opacity: 1;">Your home away from home</h3>
-    <div class="et-hero-tabs-container">
-      <a class="et-hero-tab" href="#tab-apt">Apartment</a>
-      <a class="et-hero-tab" href="#tab-buurt">Neighborhood</a>
-      <a class="et-hero-tab" href="#tab-rates">Rates and Availability</a>
-      <a class="et-hero-tab" href="#tab-rules">House Rules</a>
-      <a class="et-hero-tab" href="#tab-about">About and Contact</a>
-      <span class="et-hero-tab-slider"></span>
-    </div>
-  </section>
-  <div class="gallery-wrap">
-    <div class="item item-1 hovertext" data-hover="The bar"></div>
-    <div class="item item-2 hovertext" data-hover="Living area"></div>
-    <div class="item item-3 hovertext" data-hover="The TV"></div>
-    <div class="item item-4 hovertext" data-hover="Kitchen"></div>
-  </div>
-
-  <!-- Main -->
-  <main class="et-main">
-    <section class="et-slide" id="tab-apt" style="height: 90vh;">
-      <h2 style="opacity: .6;">Fully furnished appartment with large garden</h2>
-      <div style="display: flex; align-items: center; opacity: 0.6;">
-        <div style="display: flex; align-items: center; padding-right: 2em;">
-          <div style="text-align: center; padding-right: .5em;">
-            <img src="/icons/bed.png">
-          </div>
-          <p>
-            2 beds
-          </p>
-        </div>
-        <div style="display: flex; align-items: center; padding-right: 2em;">
-          <div style="text-align: center; padding-right: .5em;">
-            <img src="/icons/desk.png">
-          </div>
-          <p>
-            2 desks
-          </p>
-        </div>
-        <div style="display: flex; align-items: center; padding-right: 2em;">
-          <div style="text-align: center; padding-right: .5em;">
-            <img src="/icons/shower.png">
-          </div>
-          <p>
-            1.5 bath
-          </p>
-        </div>
-      </div>
-      
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A itaque voluptas impedit, iure modi beatae saepe est porro, soluta quas aut nulla deserunt, doloremque pariatur amet sequi id rem? Mollitia?</p>
-      <h4 style="margin-bottom: 0px;">Amenities</h4>
-        <span style="display: flex; opacity: 0.6;">
-          <div style="display: flex; align-items: center; margin-right: 2em;">
-            <div style="margin-right: .5em;">
-              <img src="/icons/bed.png">
+    <section class="navbar">
+        <h1 style="margin-left: .4em; color: #04765d;">
+            Wibaut Place
+        </h1>
+    </section>
+    <section id="apartment" style="margin-top: 2em;">
+        <div class="slider-container">
+            <div class="slider">
+              <div class="slides">
+                <div id="slides__1" class="slide">
+                  <img src="/images/garden.jpg" width="100%">
+                  <a class="slide__prev" href="#slides__4" title="Next"></a>
+                  <a class="slide__next" href="#slides__2" title="Next"></a>
+                </div>
+                <div id="slides__2" class="slide">
+                    <img src="/images/im1.jpg" width="100%">
+                  <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                  <a class="slide__next" href="#slides__3" title="Next"></a>
+                </div>
+                <div id="slides__3" class="slide">
+                    <img src="/images/im2.jpg" width="100%">
+                  <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                  <a class="slide__next" href="#slides__4" title="Next"></a>
+                </div>
+                <div id="slides__4" class="slide">
+                    <img src="/images/im3.jpg" width="100%">
+                  <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                  <a class="slide__next" href="#slides__1" title="Prev"></a>
+                </div>
+              </div>
             </div>
-            <p style="width:100%">
-              Fully furnished kitchen
-            </p>
           </div>
-          <div style="display: flex; align-items: center; margin-right: 2em;">
-            <div style="margin-right: .5em;">
-              <img src="/icons/desk.png">
-            </div>
-            <p>
-              Portable fan
-            </p>
-          </div>
-          <div style="display: flex; align-items: center; margin-right: 2em;">
-            <div style="margin-right: .5em;">
-              <img src="/icons/shower.png">
-            </div>
-            <p style="width:100%">
-              Esspresso machine
-            </p>
-          </div>
-        </span>
-        <span style="display: flex; opacity: 0.6;">
-          <div style="display: flex; align-items: center; margin-right: 2em;">
-            <div style="padding-right: .5em;">
-              <img src="/icons/bed.png">
-            </div>
-            <p style="width:100%">
-              Full-size fridge
-            </p>
-          </div>
-          <div style="display: flex; align-items: center; padding-right: 2em;">
-            <div style="padding-right: .5em;">
-              <img src="/icons/desk.png">
-            </div>
-            <p style="width: 100%;">
-              Washer and dryer
-            </p>
-          </div>
-          <div style="display: flex; align-items: center; padding-right: 2em;">
-            <div style="padding-right: .5em;">
-              <img src="/icons/shower.png">
-            </div>
-            <p style="width:100%;">
-              Covered balcony
-            </p>
-          </div>
-        </span>
-        <span style="display: flex; opacity: 0.6;">
-          <div style="display: flex; align-items: center; padding-right: 2em;">
-            <div style="padding-right: .5em;">
-              <img src="/icons/bed.png">
-            </div>
-            <p style="width: 100%">
-              Large garden
-            </p>
-          </div>
-          <div style="display: flex; align-items: center; padding-right: 2em;">
-            <div style="padding-right: .5em;">
-              <img src="/icons/desk.png">
-            </div>
-            <p style="width: 100%;">
-              Flat screen TV
-            </p>
-          </div>
-          <div style="display: flex; align-items: center; padding-right: 2em;">
-            <div style="padding-right: .5em;">
-              <img src="/icons/shower.png">
-            </div>
-            <p style="width: 100%;">
-              Smart heating
-            </p>
-          </div>
-        </span>
-      
+    </section>
     
+    <section>
+        <h1>
+            Spacious apartment with large garden
+        </h1>
+        <p>
+            Amstedam, the Netherlands
+        </p>
+        <div class="row--flex">
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/bed.png">
+                <p class="row--flex--item">
+                    2 bedrooms
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/desk.png">
+                <p class="row--flex--item">
+                    2 desks
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/shower.png">
+                <p class="row--flex--item">
+                    1 toilet
+                </p>
+            </div>
+        </div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem rerum, aliquid saepe similique distinctio numquam consequuntur tempore ducimus unde minus molestiae corporis tenetur maiores explicabo nam nisi fugiat deserunt atque ab dolorem vel totam asperiores sit inventore! Nam quas vel autem, optio delectus, minima numquam repudiandae accusantium reprehenderit molestiae expedita magni, impedit blanditiis consectetur aut maxime commodi? Commodi distinctio facilis dicta quo in? Facilis tenetur accusantium dolores deserunt provident culpa praesentium expedita numquam fuga voluptates ab corporis, nihil commodi exercitationem tempora, a nobis veniam libero temporibus suscipit, harum recusandae autem nam. Sequi eaque nostrum dicta nobis sunt nam blanditiis quia vel esse aperiam animi recusandae modi non quos reiciendis eligendi in corrupti dolore eum, maiores ipsum et provident nisi laborum. Adipisci magnam, voluptatibus delectus eveniet vel voluptas beatae dolor accusamus omnis! Consequatur nihil voluptas libero, fugiat, architecto, esse laudantium et nesciunt ipsam recusandae sequi earum! Deleniti ipsa numquam harum, cumque officia, ut, nihil officiis quas ex accusantium facere iste in accusamus placeat repellendus fugit aliquam autem tenetur totam doloribus voluptates vitae est nesciunt at? Aperiam debitis modi adipisci doloremque, deserunt dolore eveniet sit ut rem quia placeat sed voluptatibus obcaecati corrupti excepturi officiis soluta iusto. Sed similique quo eligendi quibusdam.
+        </p>
     </section>
-    <section class="et-slide" id="tab-buurt" style="height: 100vh;">
-      <h1>Neighborhood</h1>
-      <h3>something about neighborhood</h3>
+    <section id="amenities">
+        <h2>
+            Amenities
+        </h2>
+        <div class="row--flex">
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/fridge.png" style="opacity: .6;">
+                <p class="row--flex--item">
+                    Full size fridge
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/laundry.png">
+                <p class="row--flex--item">
+                    Washer and dryer
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/dish.png">
+                <p class="row--flex--item">
+                    Dish washer
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/tv.png" style="opacity: .6;">
+                <p class="row--flex--item">
+                    Big screen TV
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/wifi.png">
+                <p class="row--flex--item">
+                    Mesh wifi
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/esspresso.png">
+                <p class="row--flex--item">
+                    Esspresso machine
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/balcony.png">
+                <p class="row--flex--item">
+                    Covered balcony
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/park.png"">
+                <p class="row--flex--item">
+                    Large garden
+                </p>
+            </div>
+            <div class="row--flex--set">
+                <img class="row--flex--item row--flex--icon" src="/icons/elevator.png">
+                <p class="row--flex--item">
+                    Elevator
+                </p>
+            </div>
+        </div>
     </section>
-    <section class="et-slide" id="tab-rates" style="height: 100vh;">
-      <h1>Rates and Availability</h1>
-      <h3>something about rates and availability</h3>
-    </section>
-    <section class="et-slide" id="tab-rules" style="height: 100vh;">
-      <h1>House Rules</h1>
-      <h3>something about rules</h3>
-    </section>
-    <section class="et-slide" id="tab-about" style="height: 100vh;">
-      <h1>About and Contact</h1>
-      <h3>something about us</h3>
-    </section>
-  </main>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
 
+    <section id="neighborhood">
+        <h2>
+            The Neighborhood
+        </h2>
+        <div class="row--flex" style="justify-content:space-between">
+            <div style="max-width: 30em; padding-right: 1em;">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit magnam similique aut, quae rerum ad facilis aliquam nisi architecto fugit iste omnis repudiandae reiciendis, voluptatem molestias corporis vero natus hic!
+                </p>
+                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.4220009406836!2d4.91029605067677!3d52.35297745624791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609837bfba6a5%3A0x7129483e9febfbb7!2sWibautstraat%20182%2C%201091%20GS%20Amsterdam%2C%20Netherlands!5e0!3m2!1sen!2see!4v1661919466949!5m2!1sen!2see" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div">
+            </div>
+        </div>
+    </section>
+
+    <section id="rules">
+        <h2>
+            House Rules
+        </h2>
+        <div class="row--flex" style="justify-content:space-between">
+            <div style="max-width: 30em; padding-right: 1em;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore blanditiis iste, ex nihil rem facilis nisi neque dolorum voluptatem earum. Ipsum distinctio nam eum temporibus facere officia ducimus neque? Ducimus.
+                </p>
+            </div>
+            <div>
+                <ul style="text-align:left">
+                    <li>
+                        1
+                    </li>
+                    <li>
+                        2
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="position: fixed;  z-index: 12;">
+        <input id="toggle" type="checkbox"></input>
+
+        <label for="toggle" class="hamburger">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+        </label>
+
+        <div class="nav">
+            <div class="nav-wrapper">
+                <nav>
+                <a href="#apartment">The Apartment</a><br>
+                <a href="#amenities">Ammenities</a><br>
+                <a href="#neighborhood">Neighborhood</a><br>
+                <a href="#">House Rules</a><br>
+                <a href="#">Rates and Availability</a><br>
+                <a href="#">About Us</a>
+                </nav>
+            </div>
+        </div>    
+    </section>
 </body>
 </html>
