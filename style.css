@@ -13,6 +13,7 @@ html{
 
 body {
     font-family: "Century Gothic", "Lato", sans-serif;
+    font-size: 1rem;
     color:slategray; 
     opacity: 1;
     max-width: 900px;
@@ -174,6 +175,7 @@ p {
     flex-direction: row;
     margin-right: .8em;
     align-items: center;
+    font-size: 1rem;
 }
 
 .row--flex--icon {
