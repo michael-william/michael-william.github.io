@@ -1,0 +1,217 @@
+/* INSTRUCTIONS
+ *
+ * 1) Keep the text inside .intro-content
+ *    in the same place, but have the background
+ *    extend from one side of the viewport
+ *    to the other, no matter how wide or narrow
+ *    the browser is.
+ *
+ * 2) Limit the maximum width of the text in the
+ *    bottom area.
+ *
+ * You may modify the HTML if needed
+ * (you probably should for this challenge)
+ *
+ */
+:root {
+  --blue--light: #579FFF;
+  --blue--medium: #2D9BF0;
+  --blue--dark: #404CB0;
+  --gold:#FEBC30;
+
+
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 350px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+}
+
+.btn{
+  justify-self: flex-end;
+}
+
+img{
+  width:100%
+}
+
+.section {
+  width: 100%;
+}
+
+
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-color: pink;
+}
+
+.container h2 {
+  margin: 0em;
+  padding: 32px;
+  padding-bottom: 1em;
+}
+
+
+.container h3 {
+  margin-bottom: .6em;
+  font-weight: 400;
+}
+
+
+.row {
+  display: flex;  
+  justify-content: space-between;
+  padding: 0em 2em 2em;
+  flex-wrap: wrap;
+}
+
+
+.blue__light__bg {
+  background-color: var(--blue--light);
+  color: white;
+}
+
+.blue__dark__bg {
+  background-color: var(--blue--dark);
+  color: white;
+}
+
+.white__bg {
+  color:var(--blue--dark);
+}
+
+.col__center {
+  text-align: center;
+  width:100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col__left_hero {
+  text-align: left;
+  width:100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.col__center img {
+  width: 100%;
+  border-radius: 3px;
+  max-height: 104px;
+}
+
+.col__center p{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-top: 0em;
+  width: 70%;
+}
+
+a.btn {
+  text-decoration: none;
+  width: 60%;
+}
+
+.btn p{
+  background-color: var(--blue--dark);
+  margin: .8em auto;
+  padding: .3em;
+  width: 75%;
+  font-weight: 400;
+  color: white;
+  border-radius: 100px;
+  
+}
+
+a.btn__light {
+  text-decoration: none;
+  width: 60%;
+}
+
+.btn__light p{
+  background-color: rgb(255, 255, 255);
+  margin: .8em auto;
+  padding: .3em;
+  width: 75%;
+  font-weight: 400;
+  color:var(--blue--dark);
+  border-radius: 100px;
+  
+}
+
+
+.btn:hover,
+.btn__light:hover,
+.btn:focus,
+.btn__light:focus {
+  opacity: .6;
+}
+
+.row__footer {
+  display: flex;  
+  gap: 2em;
+  padding: 1em 2em;
+  flex-wrap: wrap;
+}
+
+a.foot__link {
+  text-decoration: none;
+  width: 60%;
+}
+
+.foot__link p{
+  margin: .8em auto;
+  padding: .3em;
+  width: 75%;
+  font-weight: 700;
+  color: white;
+}
+
+.eapps-link {
+  opacity:0;
+}
+
+@media (max-width:910px) {
+  .row, .row__footer{
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .col__center {
+    width:100%;
+    max-width: 600px;
+  }
+
+  .col__center img {
+    width: 100%;
+    border-radius: 3px;
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  .row__footer {  
+    gap: .5em;
+  }  
+}
+
