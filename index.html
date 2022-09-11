@@ -4,161 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Villagers</title>
+    <title>Challenge 4</title>
     <link rel="stylesheet" href="/styles/style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav_container">
-                <div class="nav_row">
-                    <div>
-                        <img src="/images/icon.png" alt="" style="max-width: 75px;">
+    <section id="responsive_nav" class="nav_container" style="position: sticky;">
+        <div class="wide_nav">
+            <div>
+                <a href="#"><img src="/images/icon.png" alt="" style="height:100%; max-width: 60px; margin-left: 25px;"></a>
+            </div>
+            <div>
+                <nav class="wide_nav_row">
+                    <div class="burger_nav">
+                        <input id="toggle" type="checkbox"></input>
+                        <label for="toggle" class="hamburger">
+                            <div id="top-bun" class="hamburger_line" style="margin-top: 0px;"></div>
+                            <div id="meat" class="hamburger_line"></div>
+                            <div id="bottom-bun" class="hamburger_line"></div>
+                        </label>
+                        <div class="burger_popup">
+                            <div class="nav_wrapper">
+                                <nav>
+                                    <a href="#">The Apartment</a><br>
+                                    <a href="#">Amenities</a><br>
+                                    <a href="#">Neighbourhood</a><br>
+                                    <a href="#">House Rules</a><br>
+                                    <a href="#">Rates and Availability</a><br>
+                                    <a href="#">About Us and Contact</a>
+                                </nav>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="nav_list_row">
-                        <li class="nav_item">
-                            <a href="#" class=""><span class="active_page">Page1</span></a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#" class=""><span>Page2</span></a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#" class=""><span>Page3</span></a>
-                        </li>
-                    </ul>
-                </div>
+                    <a class="wide_nav_item" href="#apartment">Page1</a><br>
+                    <a class="wide_nav_item" href="#amenities">Page2</a><br>
+                    <a class="wide_nav_item" href="#neighborhood">Page3</a><br>
+                </nav>
             </div>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero_container">
+        </div> 
+    </section>
+    <header class="hero">
+        <div class="container">
             <div class="hero_row">
-            <div class="hero_text">
-                <h1>Welcome to New Villagers!</h1>
-                <p>
-                    Are you ready to join the viallge?
-                </p>
-                <a href="#" class="hero_btn">Click here</a>
-            </div>
-            <div class="hero_img">
-                <img src="/images/NV-logo-wide.png" alt="">
+                <div class="hero_text">
+                    <h1>Welcome to New Villagers!</h1>
+                    <p>
+                        Are you ready to join the viallge?
+                    </p>
+                    <a href="#" class="hero_btn">Click here</a>
+                </div>
+                <div class="hero_img">
+                    <img src="/images/NV-logo-wide.png" alt="">
+                </div>
             </div>
         </div>
-        
-    </section>
-
-    <main class="main">
-        
-        <section class="container" id="nvc">
-            <div class="section_header">
-                <h2>
-                    NVC is Here for You!
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col_center">
-                    <div>
-                        <img src="/images/our mission.jpg" alt="">
-                    </div>
-                    <h3>
-                        Our Mission
-                    </h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vitae rem veniam voluptas ipsam. Alias nobis doloribus itaque soluta vero vitae, possimus quo adipisci, non id est laboriosam, eum esse.
-                    </p>
-                    <a href="#" class="hero_btn">Click here</a>
+    </header>
+    <main>
+        <section id="NVC">
+            <div class="container">
+                <div class="section_header">
+                    <h2>
+                        NVC is Here for You!
+                    </h2>
                 </div>
-                <div class="col_center">
-                    <div>
-                        <img src="/images/Seniors-laughing.png" alt="">
+                <div class="row">
+                    <div class="col_center">
+                        <div>
+                            <img src="/images/our mission.jpg" alt="">
+                        </div>
+                        <h3>
+                            Our Mission
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vitae rem veniam voluptas ipsam. Alias nobis doloribus itaque soluta vero vitae, possimus quo adipisci, non id est laboriosam, eum esse.
+                        </p>
+                        <a href="#" class="hero_btn">Click here</a>
                     </div>
-                    <h3>
-                        Come Join Us
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque accusamus iste ipsa velit quas recusandae vero iusto? Saepe a, modi eos placeat fuga ea tempora expedita dolor quam, quae aperiam!
-                    </p>
-                    <a href="#" class="hero_btn">Click here</a>
-                </div>
-                <div class="col_center">
-                    <div>
-                        <img src="/images/volunteer.png" alt="">
+                    <div class="col_center">
+                        <div>
+                            <img src="/images/Seniors-laughing.png" alt="">
+                        </div>
+                        <h3>
+                            Come Join Us
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque accusamus iste ipsa velit quas recusandae vero iusto? Saepe a, modi eos placeat fuga ea tempora expedita dolor quam, quae aperiam!
+                        </p>
+                        <a href="#" class="hero_btn">Click here</a>
                     </div>
-                    <h3>
-                        Volunteerism
-                    </h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora sint quam velit, natus, officiis asperiores iure recusandae quidem nostrum enim dicta consectetur ducimus alias assumenda atque. Saepe minima ut illum.
-                    </p>
-                    <a href="#" class="hero_btn">Click here</a>
-                </div>
-            </div>
-
-        </section>
-        <section class="container" id="life">
-            <div class="section_header">
-                <h2>
-                    Life as a New Villager
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col_center">
-                    <div>
-                        <img src="/images/SOCIALS.jpg" alt="">
+                    <div class="col_center">
+                        <div>
+                            <img src="/images/volunteer.png" alt="">
+                        </div>
+                        <h3>
+                            Volunteerism
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora sint quam velit, natus, officiis asperiores iure recusandae quidem nostrum enim dicta consectetur ducimus alias assumenda atque. Saepe minima ut illum.
+                        </p>
+                        <a href="#" class="hero_btn">Click here</a>
                     </div>
-                    <h3>
-                        Monthly Socials
-                    </h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vitae rem veniam voluptas ipsam. Alias nobis doloribus itaque soluta vero vitae, possimus quo adipisci, non id est laboriosam, eum esse.
-                    </p>
-                    <a href="#" class="hero_btn">Click here</a>
                 </div>
-                <div class="col_center">
-                    <div>
-                        <img src="/images/EVENTS.png" alt="">
-                    </div>
-                    <h3>
-                        Activities & Events
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque accusamus iste ipsa velit quas recusandae vero iusto? Saepe a, modi eos placeat fuga ea tempora expedita dolor quam, quae aperiam!
-                    </p>
-                    <a href="#" class="hero_btn">Click here</a>
-                </div>
-                <div class="col_center">
-                    <div>
-                        <img src="/images/special interest groups.jpg" alt="">
-                    </div>
-                    <h3>
-                        Interest Groups
-                    </h3>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora sint quam velit, natus, officiis asperiores iure recusandae quidem nostrum enim dicta consectetur ducimus alias assumenda atque. Saepe minima ut illum.
-                    </p>
-                    <a href="#" class="hero_btn">Click here</a>
-                </div>
+            
             </div>
         </section>
-        <section class="container" id="recent-activity">
-            <div class="section_header">
-                <h2>
-                    Recent Activity
-                </h2>
+        <section id="life">
+            <div class="container">
+                <div class="section_header">
+                    <h2>
+                        Life as a New Villager
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col_center">
+                        <div style="max-width: 100%;">
+                            <img src="/images/SOCIALS.jpg" alt="">
+                        </div>
+                        <h3>
+                            Monthly Socials
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vitae rem veniam voluptas ipsam. Alias nobis doloribus itaque soluta vero vitae, possimus quo adipisci, non id est laboriosam, eum esse.
+                        </p>
+                        <a href="#" class="hero_btn">Click here</a>
+                    </div>
+                    <div class="col_center">
+                        <div>
+                            <img src="/images/EVENTS.png" alt="">
+                        </div>
+                        <h3>
+                            Activities & Events
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque accusamus iste ipsa velit quas recusandae vero iusto? Saepe a, modi eos placeat fuga ea tempora expedita dolor quam, quae aperiam!
+                        </p>
+                        <a href="#" class="hero_btn">Click here</a>
+                    </div>
+                    <div class="col_center">
+                        <div>
+                            <img src="/images/special interest groups.jpg" alt="">
+                        </div>
+                        <h3>
+                            Interest Groups
+                        </h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora sint quam velit, natus, officiis asperiores iure recusandae quidem nostrum enim dicta consectetur ducimus alias assumenda atque. Saepe minima ut illum.
+                        </p>
+                        <a href="#" class="hero_btn">Click here</a>
+                    </div>
+                </div>
+            
             </div>
-            <div class="row">
-                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                <div class="elfsight-app-54927603-c5fa-43be-9b22-a64638f8375d"></div>
+        </section>
+        <section id="activity">
+            <div class="container">
+                <div class="section_header">
+                    <h2>
+                        Recent Activity
+                    </h2>
+                </div>
+                <div>
+                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                    <div style="width: 100%; overflow-x: hidden;"
+                    <div class="elfsight-app-54927603-c5fa-43be-9b22-a64638f8375d"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_row">
-                <div class="col__center" style="align-self: center;">
-                    <img src="/images/NV-logo-wide.png" alt="" style="max-height: 100%;">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <img src="/images/NV-logo-wide.png" alt="" >
                 </div>
                 <div class="col_col">
                     <h2 style="color: white;">
@@ -180,6 +202,7 @@
             </div>
         </div>
     </footer>
+    
     
 </body>
 </html>
